@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: #111111;
+}
+
+.searchbar {
+  display: none;
+}
+
+.midbar ul,
+.settings ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .midbar {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .logo {
+    display: none;
+  }
+  .settings {
+    display: none;
+  }
+  .searchbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
