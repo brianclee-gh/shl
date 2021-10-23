@@ -9,7 +9,7 @@ export default function Navbar() {
         <MiniSearchBar />
       </div>
       <div className={styles.logo}>
-        SHL
+        SHL (logoImage)
       </div>
       <div className={styles.midbar}>
         <ul>
