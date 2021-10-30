@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Navbar.module.css'
+import styles from '../../styles/NavBar.module.css'
 import MiniSearchBar from '../searchbar/MiniSearchBar'
 
 export default function Navbar() {

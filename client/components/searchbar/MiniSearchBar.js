@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MiniSearchBar.module.css'
+import styles from '../../styles/MiniSearchBar.module.css'
 
 export default function MiniSearchBar() {
   return (
