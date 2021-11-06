@@ -18,7 +18,7 @@ export default function Home() {
         <section className={styles.splash}>
           <Image src={airBnbBG} />
           <div className={styles.centerText}>
-            <p className={styles.text}>Not sure where to go? Perfect.</p>
+            <p className={styles.text}>Not sure what to shoot? Perfect.</p>
           </div>
         </section>
       </main>
