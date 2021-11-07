@@ -19,6 +19,7 @@ export default function Home() {
           <Image src={airBnbBG} />
           <div className={styles.centerText}>
             <p className={styles.text}>Not sure what to shoot? Perfect.</p>
+            <button>Search for a photographer in your area</button>
           </div>
         </section>
       </main>
