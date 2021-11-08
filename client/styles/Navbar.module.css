@@ -12,16 +12,20 @@
   padding: 0 2rem;
 }
 
+.logo, .midbar, .settings {
+  flex: 1;
+}
+
 .searchbar {
   display: none;
 }
 
 .midbar ul,
-.settings ul {
+.settings > ul {
   display: flex;
   list-style: none;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 960px) {

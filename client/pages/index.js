@@ -3,7 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar/Navbar'
 
+
 import airBnbBG from '../public/airBnbBG.jpg'
+import photoLocations from '../data/photoLocations.json'
 
 export default function Home() {
   return (
@@ -19,7 +21,35 @@ export default function Home() {
           <Image src={airBnbBG} />
           <div className={styles.centerText}>
             <p className={styles.text}>Not sure what to shoot? Perfect.</p>
-            <button>Search for a photographer in your area</button>
+            <button className={styles.middleSearchButton}>I'm flexible</button>
+          </div>
+        </section>
+        <section className={styles.sectional}>
+          <div className={styles.sectionalTitle}>Explore by location</div>
+          <div className={styles.sectionalGrid}>
+            {
+              photoLocations.map(location => {
+                return (
+                  <div key={location.distance} className={styles.locationCard}>
+                    <span>photoPlaceholder</span>
+                    <span className={styles.locationCardInfo}>
+                      <span className={styles.locationName}>
+                        {location.photoLocation}
+                      </span>
+                      <span>
+                        {
+                          (parseInt(location.distance) < 60)
+                            ? `${location.distance} min drive`
+                            : `${location.distance / 60} hour drive`
+                        }
+
+                      </span>
+                    </span>
+
+                  </div>
+                )
+              })
+            }
           </div>
         </section>
       </main>

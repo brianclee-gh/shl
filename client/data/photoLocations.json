@@ -1,0 +1,18 @@
+[
+  {
+    "photoLocation": "San Francisco",
+    "distance": "30"
+  },
+  {
+    "photoLocation": "San Jose",
+    "distance": "60"
+  },
+  {
+    "photoLocation": "Oakland",
+    "distance": "45"
+  },
+  {
+    "photoLocation": "Mammoth Lakes",
+    "distance": "390"
+  }
+]

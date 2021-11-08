@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../../styles/NavBar.module.css'
 import MiniSearchBar from '../searchbar/MiniSearchBar'
+import { faInbox } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
   return (
@@ -9,7 +11,7 @@ export default function Navbar() {
         <MiniSearchBar />
       </div>
       <div className={styles.logo}>
-        SHL (logoImage)
+        SHL
       </div>
       <div className={styles.midbar}>
         <ul>
@@ -19,10 +21,10 @@ export default function Navbar() {
         </ul>
       </div>
       <div className={styles.settings}>
-        <ul>
+        <ul className={styles.settingsList}>
           <li>Become a Photograper</li>
-          <li>DM</li>
-          <li>Account Settings</li>
+          <li><FontAwesomeIcon icon={faInbox}/></li>
+          <li>My Account</li>
         </ul>
       </div>
     </div>
