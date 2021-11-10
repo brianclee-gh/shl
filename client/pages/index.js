@@ -52,6 +52,10 @@ export default function Home() {
             }
           </div>
         </section>
+        <section>
+          <p className={styles.test}>First</p>
+          <p className={styles.test}>Second</p>
+        </section>
       </main>
 
       <footer className={styles.footer}>
