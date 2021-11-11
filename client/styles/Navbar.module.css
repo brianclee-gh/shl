@@ -16,6 +16,12 @@
   flex: 1;
 }
 
+.midbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .searchbar {
   display: none;
 }
@@ -26,6 +32,14 @@
   list-style: none;
   align-items: center;
   justify-content: center;
+}
+
+.midbar ul li {
+  margin: 0 1rem;
+}
+
+.settings ul li {
+  margin: 0 0.3rem;
 }
 
 @media (max-width: 960px) {
