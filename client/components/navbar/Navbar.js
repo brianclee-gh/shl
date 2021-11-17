@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/NavBar.module.css'
 import MiniSearchBar from '../searchbar/MiniSearchBar'
-import { faInbox } from '@fortawesome/free-solid-svg-icons'
+import { faInbox, faUserCircle, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
@@ -24,7 +24,12 @@ export default function Navbar() {
         <ul className={styles.settingsList}>
           <li>Become a Photograper</li>
           <li><FontAwesomeIcon icon={faInbox}/></li>
-          <li>My Account</li>
+          <li>
+            <div className={styles.accountButton}>
+              <FontAwesomeIcon icon={faBars}/>
+              <FontAwesomeIcon icon={faUserCircle}/>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

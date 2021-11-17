@@ -18,7 +18,10 @@ export default function Home() {
       <Navbar />
       <main className={styles.main}>
         <section className={styles.splash}>
-          <Image src={airBnbBG} />
+          <Image
+            src={airBnbBG}
+            alt="Banner image"
+          />
           <div className={styles.centerText}>
             <p className={styles.text}>Not sure what to shoot? Perfect.</p>
             <button className={styles.middleSearchButton}>I'm flexible</button>
