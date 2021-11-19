@@ -15,9 +15,9 @@ export default function Navbar() {
       </div>
       <div className={styles.midbar}>
         <ul>
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
+          <li>Weddings</li>
+          <li>Family</li>
+          <li>LinkedIn</li>
         </ul>
       </div>
       <div className={styles.settings}>
