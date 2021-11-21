@@ -9,6 +9,11 @@ export default function Footer() {
       </section>
       <section id="rightFooter">
         Social Media
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
       </section>
     </div>
   )
