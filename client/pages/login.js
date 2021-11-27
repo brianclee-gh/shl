@@ -1,11 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Login.module.css'
+import { useState } from 'react'
 import Navbar from '../components/navbar/Navbar'
 
 import React from 'react'
 
 export default function Login() {
+  const [loginUser, setLoginUser] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+
+  const updateUsername = (e) => {
+    const username = e.target.value;
+    setLoginUser(username);
+  }
+
+  const updatePassword = (e) => {
+    const password = e.target.value;
+    setLoginPassword(password);
+  }
+
+  const validateLogin = (e) => {
+    e.preventDefault()
+    console.log(loginUser, loginPassword)
+  }
+
   return (
     <div>
       <Head>
@@ -15,9 +34,9 @@ export default function Login() {
       </Head>
       <div>
         Login Page
-        <form>
-          <input placeholder="email or username"></input>
-          <input type="password" placeholder="password"></input>
+        <form onSubmit={(e) => validateLogin(e)}>
+          <input onChange={(e) => updateUsername(e)} placeholder="email or username"></input>
+          <input onChange={(e) => updatePassword(e)} type="password" placeholder="password"></input>
           <input type="submit"></input>
         </form>
       </div>
